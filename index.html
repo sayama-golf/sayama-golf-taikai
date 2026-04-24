@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>狭山ゴルフ協会</title>
 
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -16,7 +15,7 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
     background:#f5f7f5;
     color:#333;
     line-height:1.6;
@@ -31,7 +30,7 @@ header{
     min-height:320px;
 
     background-image:url("header.jpg");
-    background-size:100% auto;
+    background-size:cover;              /* 修正 */
     background-position:center center;
     background-repeat:no-repeat;
 
@@ -47,7 +46,6 @@ header{
     overflow:hidden;
 }
 
-/* 黒レイヤー */
 header::before{
     content:"";
     position:absolute;
@@ -55,7 +53,6 @@ header::before{
     background:rgba(0,0,0,0.35);
 }
 
-/* タイトル文字 */
 header span{
     position:relative;
     z-index:2;
@@ -188,9 +185,10 @@ main{
 @media (max-width:768px){
 
 header{
-    min-height:170px;
-    font-size:1.45rem;
-    background-size:100% auto;
+    min-height:220px;                  /* 高さ不足改善 */
+    font-size:1.7rem;
+    background-size:cover;            /* 修正 */
+    background-position:center center;
 }
 
 main{
@@ -238,10 +236,9 @@ main{
     狭山市民ゴルフ大会のご案内
 </div>
 
-    
 <div class="scroll-box">
 
-        <div class="archive-card">
+    <div class="archive-card">
         <div class="archive-date">
             <i class="fa-solid fa-calendar-days icon"></i>2026.09.28
         </div>
@@ -251,8 +248,8 @@ main{
         <div class="archive-text">開催場所：狭山ゴルフ・クラブ</div>
         <div class="archive-text">開催予定日：2026年9月28日(月)</div>
     </div>
-    
-        <div class="archive-card">
+
+    <div class="archive-card">
         <div class="archive-date">
             <i class="fa-solid fa-calendar-days icon"></i>2026.11.30
         </div>
