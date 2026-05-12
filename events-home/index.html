@@ -22,7 +22,7 @@ body{
 }
 
 /* ======================
-   ヘッダー
+   ヘッダー（改善版）
 ====================== */
 header{
     position:relative;
@@ -44,14 +44,28 @@ header::before{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,0.45);
+    z-index:1;
 }
 
 header span{
     position:relative;
     z-index:2;
-    text-shadow:0 4px 12px rgba(0,0,0,0.9);
+    text-shadow:
+        0 4px 12px rgba(0,0,0,0.9);
 }
 
+/* ======================
+   スマホ対応
+====================== */
+@media (max-width:768px){
+
+header{
+    min-height:200px;
+    font-size:2rem;
+    background-position:center center;
+}
+
+}
 /* ======================
    ナビタブ
 ====================== */
